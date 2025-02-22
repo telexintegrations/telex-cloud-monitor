@@ -1,0 +1,28 @@
+# application.yml
+server:
+  port: 8080
+
+spring:
+  application:
+    name: cloud-cost-tracker
+
+telex:
+  webhook:
+    url: "https://ping.telex.im/v1/webhooks/01952c5d-3d09-7cc7-85da-c325390c1db6"
+
+# Alibaba Cloud Configuration
+alibaba:
+  cloud:
+    accessKeyId: "${ALIBABA_CLOUD_ACCESS_KEY:LTAI5tFmUTYusVceBNR7fLAL}"
+    accessKeySecret: "${ALIBABA_CLOUD_ACCESS_KEY_SECRET:zF6UBzOiE56CUn2wokdJnRrgqhgcMI}"
+    endpoint: "business.aliyuncs.com"
+    region: "dysmsapi.aliyuncs.com"
+
+monitoring:
+  schedule: "0 0 */6 * * *"
+
+# Spending Thresholds
+spending:
+  threshold:
+    warning: 1000
+    critical: 2000
