@@ -13,8 +13,8 @@ telex:
 # Alibaba Cloud Configuration
 alibaba:
   cloud:
-    accessKeyId: "${ALIBABA_CLOUD_ACCESS_KEY:LTAI5tFmUTYusVceBNR7fLAL}"
-    accessKeySecret: "${ALIBABA_CLOUD_ACCESS_KEY_SECRET:zF6UBzOiE56CUn2wokdJnRrgqhgcMI}"
+    accessKeyId: "${ALIBABA_CLOUD_ACCESS_KEY}"
+    accessKeySecret: "${ALIBABA_CLOUD_ACCESS_KEY_SECRET}"
     endpoint: "business.aliyuncs.com"
     region: "dysmsapi.aliyuncs.com"
 
