@@ -1,0 +1,7 @@
+{
+  "name": "Telex Cloud Resource Monitor",
+  "type": "interval",
+  "url": "https://your-public-endpoint.com/webhook",
+  "interval": 60,
+  "description": "Monitors Alibaba Cloud resource usage and sends updates to Telex every 60 seconds."
+}
